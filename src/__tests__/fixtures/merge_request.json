@@ -1,0 +1,131 @@
+{
+  "object_kind": "merge_request",
+  "event_type": "merge_request",
+  "user": {
+    "id": 11111,
+    "name": "username2",
+    "username": "username2",
+    "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/2573/avatar.png",
+    "email": "username2@example.com"
+  },
+  "project": {
+    "id": 22222,
+    "name": "projectA",
+    "description": "",
+    "web_url": "https://gitlab.com/username/projectA",
+    "avatar_url": null,
+    "git_ssh_url": "git@gitlab.com:username/projectA.git",
+    "git_http_url": "https://gitlab.com/username/projectA.git",
+    "namespace": "username",
+    "visibility_level": 0,
+    "path_with_namespace": "username/projectA",
+    "default_branch": "master",
+    "homepage": "https://gitlab.com/username/projectA",
+    "url": "git@gitlab.com:username/projectA.git",
+    "ssh_url": "git@gitlab.com:username/projectA.git",
+    "http_url": "https://gitlab.com/username/projectA.git"
+  },
+  "repository": {
+    "name": "projectA",
+    "url": "git@gitlab.com:username/projectA.git",
+    "description": "",
+    "homepage": "https://gitlab.com/username/projectA"
+  },
+  "object_attributes": {
+    "id": 1307768,
+    "iid": 42,
+    "target_branch": "master",
+    "target_project_id": 22222,
+    "source_branch": "feat/new-feature",
+    "source_project_id": 22222,
+    "author_id": 2573,
+    "assignee_id": 2732,
+    "assignee_ids": [2732],
+    "reviewer_ids": [2733],
+    "title": "Add new feature",
+    "created_at": "2022-01-24 02:44:39 UTC",
+    "updated_at": "2022-01-27 14:21:39 UTC",
+    "last_edited_at": null,
+    "last_edited_by_id": null,
+    "milestone_id": null,
+    "state_id": 1,
+    "state": "opened",
+    "blocking_discussions_resolved": true,
+    "first_contribution": false,
+    "prepared_at": "2022-01-24 02:44:40 UTC",
+    "merge_status": "can_be_merged",
+    "detailed_merge_status": "mergeable",
+    "description": "This MR adds a new feature for better reporting.",
+    "url": "https://gitlab.com/username/projectA/-/merge_requests/42",
+    "action": "open",
+    "total_time_spent": 0,
+    "time_change": 0,
+    "human_total_time_spent": null,
+    "human_time_change": null,
+    "human_time_estimate": null,
+    "source": {
+      "id": 22222,
+      "name": "projectA",
+      "description": "",
+      "web_url": "https://gitlab.com/username/projectA",
+      "avatar_url": null,
+      "git_ssh_url": "git@gitlab.com:username/projectA.git",
+      "git_http_url": "https://gitlab.com/username/projectA.git",
+      "namespace": "username",
+      "visibility_level": 0,
+      "path_with_namespace": "username/projectA",
+      "default_branch": "master",
+      "homepage": "https://gitlab.com/username/projectA",
+      "url": "git@gitlab.com:username/projectA.git",
+      "ssh_url": "git@gitlab.com:username/projectA.git",
+      "http_url": "https://gitlab.com/username/projectA.git"
+    },
+    "target": {
+      "id": 22222,
+      "name": "projectA",
+      "description": "",
+      "web_url": "https://gitlab.com/username/projectA",
+      "avatar_url": null,
+      "git_ssh_url": "git@gitlab.com:username/projectA.git",
+      "git_http_url": "https://gitlab.com/username/projectA.git",
+      "namespace": "username",
+      "visibility_level": 0,
+      "path_with_namespace": "username/projectA",
+      "default_branch": "master",
+      "homepage": "https://gitlab.com/username/projectA",
+      "url": "git@gitlab.com:username/projectA.git",
+      "ssh_url": "git@gitlab.com:username/projectA.git",
+      "http_url": "https://gitlab.com/username/projectA.git"
+    },
+    "last_commit": {
+      "id": "40628b998feed1b88c498181c0d51f0bcd900bf0",
+      "message": "feat: add new feature\n",
+      "timestamp": "2022-01-27T22:13:38+08:00",
+      "url": "https://gitlab.com/username/projectA/-/commit/40628b998feed1b88c498181c0d51f0bcd900bf0",
+      "author": {
+        "name": "username2",
+        "email": "username2@example.com"
+      }
+    },
+    "work_in_progress": false,
+    "position": 0
+  },
+  "labels": [],
+  "changes": {},
+  "assignees": [
+    {
+      "id": 2732,
+      "name": "assignee1",
+      "username": "assignee1",
+      "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/2732/avatar.png"
+    }
+  ],
+  "reviewers": [
+    {
+      "id": 2733,
+      "name": "reviewer1",
+      "username": "reviewer1",
+      "avatar_url": "https://gitlab.com/uploads/-/system/user/avatar/2733/avatar.png"
+    }
+  ]
+}

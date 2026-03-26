@@ -1,6 +1,52 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`gitlab > should send data match snapshot 1`] = `
+exports[`gitlab > merge_request event should send card 1`] = `
+[
+  {
+    "card": {
+      "config": {
+        "wide_screen_mode": true,
+      },
+      "elements": [
+        {
+          "content": "**Add new feature**
+username2 创建了 Merge Request
+\`feat/new-feature\` → \`master\`
+
+This MR adds a new feature for better reporting.
+**指派给:** assignee1
+**审核人:** reviewer1",
+          "tag": "markdown",
+        },
+        {
+          "actions": [
+            {
+              "tag": "button",
+              "text": {
+                "content": "立即查看",
+                "tag": "plain_text",
+              },
+              "type": "primary",
+              "url": "https://gitlab.com/username/projectA/-/merge_requests/42",
+            },
+          ],
+          "tag": "action",
+        },
+      ],
+      "header": {
+        "template": "blue",
+        "title": {
+          "content": "projectA Merge Request 创建了",
+          "tag": "plain_text",
+        },
+      },
+    },
+    "msg_type": "interactive",
+  },
+]
+`;
+
+exports[`gitlab > note event should send card 1`] = `
 [
   {
     "card": {
@@ -32,6 +78,93 @@ added 1 commit",
         "template": "purple",
         "title": {
           "content": "projectA 有新的评论",
+          "tag": "plain_text",
+        },
+      },
+    },
+    "msg_type": "interactive",
+  },
+]
+`;
+
+exports[`gitlab > pipeline event should send card 1`] = `
+[
+  {
+    "card": {
+      "config": {
+        "wide_screen_mode": true,
+      },
+      "elements": [
+        {
+          "content": "**Pipeline #326723** ✅ 成功
+**分支:** \`master\`
+**提交:** fix: select case not work
+**提交者:** username2
+**耗时:** 3m 5s
+**阶段:** build → test → deploy",
+          "tag": "markdown",
+        },
+        {
+          "actions": [
+            {
+              "tag": "button",
+              "text": {
+                "content": "立即查看",
+                "tag": "plain_text",
+              },
+              "type": "primary",
+              "url": "https://gitlab.com/username/projectA/-/pipelines/326723",
+            },
+          ],
+          "tag": "action",
+        },
+      ],
+      "header": {
+        "template": "green",
+        "title": {
+          "content": "projectA Pipeline ✅ 成功",
+          "tag": "plain_text",
+        },
+      },
+    },
+    "msg_type": "interactive",
+  },
+]
+`;
+
+exports[`gitlab > push event should send card 1`] = `
+[
+  {
+    "card": {
+      "config": {
+        "wide_screen_mode": true,
+      },
+      "elements": [
+        {
+          "content": "**username2** 推送了 2 个提交到 \`feat/new-feature\`
+• [\`40628b99\`](https://gitlab.com/username/projectA/-/commit/40628b998feed1b88c498181c0d51f0bcd900bf0) feat: add new feature
+• [\`b6568db1\`](https://gitlab.com/username/projectA/-/commit/b6568db1bc1dcd7f6b4fa5e7e4be14ef7dad27e3) fix: typo in feature",
+          "tag": "markdown",
+        },
+        {
+          "actions": [
+            {
+              "tag": "button",
+              "text": {
+                "content": "立即查看",
+                "tag": "plain_text",
+              },
+              "type": "primary",
+              "url": "https://gitlab.com/username/projectA/-/commits/feat/new-feature",
+            },
+          ],
+          "tag": "action",
+        },
+      ],
+      "header": {
+        "template": "blue",
+        "title": {
+          "content": "projectA 有新的推送",
           "tag": "plain_text",
         },
       },

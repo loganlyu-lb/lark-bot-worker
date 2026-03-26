@@ -1,0 +1,67 @@
+{
+  "object_kind": "push",
+  "before": "0000000000000000000000000000000000000000",
+  "after": "40628b998feed1b88c498181c0d51f0bcd900bf0",
+  "ref": "refs/heads/feat/new-feature",
+  "checkout_sha": "40628b998feed1b88c498181c0d51f0bcd900bf0",
+  "user_id": 11111,
+  "user_name": "username2",
+  "user_username": "username2",
+  "user_email": "username2@example.com",
+  "user_avatar": "https://gitlab.com/uploads/-/system/user/avatar/2573/avatar.png",
+  "project_id": 22222,
+  "project": {
+    "id": 22222,
+    "name": "projectA",
+    "description": "",
+    "web_url": "https://gitlab.com/username/projectA",
+    "avatar_url": null,
+    "git_ssh_url": "git@gitlab.com:username/projectA.git",
+    "git_http_url": "https://gitlab.com/username/projectA.git",
+    "namespace": "username",
+    "visibility_level": 0,
+    "path_with_namespace": "username/projectA",
+    "default_branch": "master",
+    "homepage": "https://gitlab.com/username/projectA",
+    "url": "git@gitlab.com:username/projectA.git",
+    "ssh_url": "git@gitlab.com:username/projectA.git",
+    "http_url": "https://gitlab.com/username/projectA.git"
+  },
+  "repository": {
+    "name": "projectA",
+    "url": "git@gitlab.com:username/projectA.git",
+    "description": "",
+    "homepage": "https://gitlab.com/username/projectA"
+  },
+  "commits": [
+    {
+      "id": "40628b998feed1b88c498181c0d51f0bcd900bf0",
+      "message": "feat: add new feature\n",
+      "title": "feat: add new feature",
+      "timestamp": "2022-01-27T22:13:38+08:00",
+      "url": "https://gitlab.com/username/projectA/-/commit/40628b998feed1b88c498181c0d51f0bcd900bf0",
+      "author": {
+        "name": "username2",
+        "email": "username2@example.com"
+      },
+      "added": ["src/feature.ts"],
+      "modified": [],
+      "removed": []
+    },
+    {
+      "id": "b6568db1bc1dcd7f6b4fa5e7e4be14ef7dad27e3",
+      "message": "fix: typo in feature\n",
+      "title": "fix: typo in feature",
+      "timestamp": "2022-01-27T22:15:38+08:00",
+      "url": "https://gitlab.com/username/projectA/-/commit/b6568db1bc1dcd7f6b4fa5e7e4be14ef7dad27e3",
+      "author": {
+        "name": "username2",
+        "email": "username2@example.com"
+      },
+      "added": [],
+      "modified": ["src/feature.ts"],
+      "removed": []
+    }
+  ],
+  "total_commits_count": 2
+}
