@@ -191,6 +191,8 @@ function handleMergeRequest(event: MergeRequestEvent) {
 
 function handlePipeline(event: PipelineEvent) {
   const { object_attributes: pipeline, project, commit, merge_request } = event;
+  if (pipeline.status !== "failed") return null;
+
   const status = PIPELINE_STATUS_MAP[pipeline.status] ?? {
     text: pipeline.status,
     template: "purple" as HeaderTemplate,
@@ -374,5 +376,6 @@ export const handleGitlabWebhook = async (
       return;
   }
 
+  if (!card) return;
   return robot.send({ msg_type: "interactive", card });
 };
