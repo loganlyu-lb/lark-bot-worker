@@ -191,7 +191,7 @@ function handleMergeRequest(event: MergeRequestEvent) {
 
 function handlePipeline(event: PipelineEvent) {
   const { object_attributes: pipeline, project, commit, merge_request } = event;
-  if (pipeline.status !== "failed") return null;
+  if (pipeline.status !== "failed" && pipeline.status !== "success") return null;
 
   const status = PIPELINE_STATUS_MAP[pipeline.status] ?? {
     text: pipeline.status,
@@ -228,6 +228,7 @@ function handlePipeline(event: PipelineEvent) {
     url: `${project.web_url}/-/pipelines/${pipeline.id}`,
     headerTemplate: status.template,
     at: at?.length ? at : undefined,
+    atAll: pipeline.status === "success",
   });
 }
 
