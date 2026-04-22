@@ -18,8 +18,6 @@ export const createRobot = (options: RobotOptions) => {
   const sendRaw = async (
     data: Message | MessageWithSign,
   ): Promise<{ code: number; msg: string }> => {
-    console.log("[robot] sending to webhook:", options.webhook?.slice(0, 60) + "...");
-    console.log("[robot] payload:", JSON.stringify(data).slice(0, 500));
     const resp = await fetch(options.webhook, {
       method: "POST",
       body: JSON.stringify(data),
@@ -27,9 +25,7 @@ export const createRobot = (options: RobotOptions) => {
         "Content-Type": "application/json",
       },
     });
-    const result = await resp.json() as { code: number; msg: string };
-    console.log("[robot] lark response:", JSON.stringify(result));
-    return result;
+    return resp.json();
   };
 
   const send = async (data: Message) => {
