@@ -105,6 +105,13 @@ exports[`gitlab > pipeline event should send card 1`] = `
           "tag": "markdown",
         },
         {
+          "tag": "div",
+          "text": {
+            "content": "<at id=all></at>",
+            "tag": "lark_md",
+          },
+        },
+        {
           "actions": [
             {
               "tag": "button",
